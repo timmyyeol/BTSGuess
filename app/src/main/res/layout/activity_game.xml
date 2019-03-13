@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444573"
+    tools:context="com.timmyyeol.btsguess.GameActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_no_corners"
+        android:text="   who is it?   "
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:gravity="center"
+        app:layout_marginTopPercent="5%" />
+
+    <Button
+        android:id="@+id/button1"
+        android:onClick="rmClick"
+        android:background="@drawable/rm"
+        app:layout_heightPercent="11%"
+        app:layout_marginLeftPercent="17%"
+        app:layout_marginTopPercent="72%"
+        app:layout_widthPercent="19%" />
+
+    <Button
+        android:id="@+id/button2"
+        android:background="@drawable/seokjin"
+        android:onClick="jinClick"
+        app:layout_heightPercent="11%"
+        app:layout_marginLeftPercent="40%"
+        app:layout_marginTopPercent="72%"
+        app:layout_widthPercent="19%" />
+
+    <Button
+        android:id="@+id/button3"
+        android:background="@drawable/suga"
+        android:onClick="sugaClick"
+        app:layout_heightPercent="11%"
+        app:layout_marginLeftPercent="63%"
+        app:layout_marginTopPercent="72%"
+        app:layout_widthPercent="19%" />
+
+    <Button
+        android:id="@+id/button4"
+        android:background="@drawable/hope"
+        android:onClick="hopeClick"
+        app:layout_heightPercent="11%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="85%"
+        app:layout_widthPercent="19%" />
+
+    <Button
+        android:id="@+id/button5"
+        android:background="@drawable/jimin"
+        android:onClick="jiminClick"
+        app:layout_heightPercent="11%"
+        app:layout_marginLeftPercent="28.5%"
+        app:layout_marginTopPercent="85%"
+        app:layout_widthPercent="19%" />
+
+    <Button
+        android:id="@+id/button6"
+        android:background="@drawable/v"
+        android:onClick="vClick"
+        app:layout_heightPercent="11%"
+        app:layout_marginLeftPercent="51.5%"
+        app:layout_marginTopPercent="85%"
+        app:layout_widthPercent="19%" />
+
+    <Button
+        android:id="@+id/button7"
+        android:background="@drawable/jungkook"
+        android:onClick="jkClick"
+        app:layout_heightPercent="11%"
+        app:layout_marginLeftPercent="75%"
+        app:layout_marginTopPercent="85%"
+        app:layout_widthPercent="19%" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        app:layout_heightPercent="50%"
+        app:layout_marginLeftPercent="6%"
+        app:layout_marginTopPercent="16%"
+        app:layout_widthPercent="88%"
+        app:srcCompat="@color/cardview_light_background" />
+
+</android.support.percent.PercentRelativeLayout>
+

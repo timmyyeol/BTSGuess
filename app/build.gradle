@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.1.0'
+    defaultConfig {
+        applicationId "com.timmyyeol.btsguess"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 4
+        versionName "4.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    compile 'com.google.android.gms:play-services-ads:16.0.0'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:percent:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    testCompile 'junit:junit:4.12'
+}
